@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+div.center{
+    display: flex;
+    justify-content: center;
+}
+.principal-container{
+    display: flex;
+    justify-content: center;
+    border-style: solid;
+    flex-direction: column;
+    max-width: 30%;
+    background-color: red;
+}
+section.img{  
+    border-style: solid;
+    display: flex;
+    justify-content: center;
+    margin: 8px; 
+    background-color: white;
+}
+img.img-pokemon{
+    display: flex;
+    justify-content: center;
+    object-fit: cover;
+    width: 60%;
+    height: 60%;
+    
+}
+section.container-pokemon{
+}
+.pokemon{
+    display: flex;
+    font-size: 15px;
+    margin: 8px;
+    justify-content: space-between;
+   
+}
+.descrition{
+    font-size: 20px;
+}
+.pokemon-descrition{
+    border-style: solid;
+    padding: 30px;
+    margin: 8px;
+    background-color: white;
+}
+.golpes{
+    font-size: 20px;
+    margin: 8px;
+}
+.golpes-descrition{
+    border-style: solid;
+    padding: 15px;
+    background-color: white;
+}
+p.pokemon-number{
+    border-style: solid;
+    border-radius: 10px;
+    font-size: 30px;
+    padding: 10px;
+    height: 50px;
+    width: 90px;  
+    display: flex;
+    justify-content: center;
+}
+div.arrow{
+    display: flex;
+    justify-content: center;
+    object-fit: cover;
+    height: 70px;
+    margin-top: 90px;
+    
+}
+.arrow-seta-direita, 
+.arrow-seta-esquerda{
+    margin: 5px;
+}
+.arrow-seta-direita:active, 
+.arrow-seta-esquerda:active{
+   height:65px;
+   margin: 5px;
+}
+
+
+
