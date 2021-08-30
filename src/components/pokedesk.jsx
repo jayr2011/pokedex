@@ -2,11 +2,17 @@ import React, { useEffect, useState } from "react";
 import Api from "../API/Api";
 const Pokedesk = () => {
   const [pokemon, setPokemon] = useState(null);
+  const [description, setDescription]=useState(null)
   const [id, setId] = useState(1);
   const buscarDados = async (id) => {
     const resposta = await Api.get(`pokemon/${id}`);
     setPokemon(resposta.data);
+    const respostaCharacteristic = await Api.get(`characteristic/${id}`);
+    setDescription(respostaCharacteristic.data.descriptions[2]);
+    console.log(respostaCharacteristic.data.descriptions[2])
   };
+
+
 
   useEffect(() => {
     buscarDados(id);
@@ -51,7 +57,7 @@ const Pokedesk = () => {
             </section>
             <div className="descrition">
               <section className="descrition">
-                <p className="pokemon-descrition">sescrição</p>
+                <p className="pokemon-descrition">{description?.description}</p>
               </section>
               <section className="golpes">
                 {pokemon?.moves.map(

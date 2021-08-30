@@ -37,26 +37,30 @@ section.container-pokemon{
     font-size: 15px;
     margin: 8px;
     justify-content: space-between;
+    text-transform: uppercase;
    
 }
 .descrition{
     font-size: 20px;
+    text-transform: uppercase ;
 }
 .pokemon-descrition{
     border-style: solid;
-    padding: 30px;
+    padding: 15px 0px;
     margin: 8px;
     background-color: white;
+    font-size: 1.2em;
+    text-transform: uppercase;
 }
 .golpes{
-    font-size: 20px;
     margin: 8px;
     background-color: white;
     border-style: solid;
+    font-size: 15px;
+    padding: 15px 0px;
 }
 .golpes-descrition{
     border-style: solid;
-    padding: 15px;
     background-color: white;
 }
 p.pokemon-number{
@@ -86,6 +90,5 @@ div.arrow{
    height:65px;
    margin: 5px;
 }
-
 
 
